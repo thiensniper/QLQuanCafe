@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QUAN_LI_QUAN_CAFE.DAO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,7 +20,7 @@ namespace QUAN_LI_QUAN_CAFE
 
         private void BT_DN_Click(object sender, EventArgs e)
         {
-            if (TB_TENDN.Text == "1" && TB_PAS.Text == "1")
+            if (AccountDAO.Instance.CheckAccountExistsByID(TB_TENDN.Text, TB_PAS.Text))
             {
                 FRM_MAIN FRM_MAIN = new FRM_MAIN();
                 this.Hide();
@@ -37,7 +38,6 @@ namespace QUAN_LI_QUAN_CAFE
             asd = MessageBox.Show("bạn có chắc muốn thoát chương trình hay không", "thông báo!", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
             if (asd == DialogResult.OK){ Application.Exit(); }
             if (asd == DialogResult.Cancel) { }
-            
         }
     }
 }

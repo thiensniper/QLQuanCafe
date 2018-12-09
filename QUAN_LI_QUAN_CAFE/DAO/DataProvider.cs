@@ -30,8 +30,7 @@ namespace QUAN_LI_QUAN_CAFE.DAO
         private DataProvider()
         { }
 
-        private string ConnectionString = @"Data Source=DESKTOP-EVQOD6D\SQLEXPRESS;Initial Catalog=QL_CAFE_BALCONY;Integrated Security=True";
-
+        private string ConnectionString = @"Data Source=.;Initial Catalog=QL_CAFE_BALCONY;Integrated Security=True";
 
         public DataTable excuteQuery(string query, object[] parameter = null)
         {
