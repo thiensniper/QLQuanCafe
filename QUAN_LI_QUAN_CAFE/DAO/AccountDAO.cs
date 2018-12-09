@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace QUAN_LI_QUAN_CAFE.DAO
 {
-    class AccountDAO
+    public class AccountDAO
     {
         private static AccountDAO instance;
 

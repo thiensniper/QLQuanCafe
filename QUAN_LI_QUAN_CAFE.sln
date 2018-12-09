@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QUAN_LI_QUAN_CAFE", "QUAN_LI_QUAN_CAFE\QUAN_LI_QUAN_CAFE.csproj", "{CE9A4336-E995-4260-82F5-2E8D8EAEB2C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QUAN_LI_QUAN_CAFE_TEST", "QUAN_LI_QUAN_CAFE_TEST\QUAN_LI_QUAN_CAFE_TEST.csproj", "{764F3B6D-896F-4E5A-9444-AC89E597F106}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +17,15 @@ Global
 		{CE9A4336-E995-4260-82F5-2E8D8EAEB2C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CE9A4336-E995-4260-82F5-2E8D8EAEB2C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CE9A4336-E995-4260-82F5-2E8D8EAEB2C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{764F3B6D-896F-4E5A-9444-AC89E597F106}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{764F3B6D-896F-4E5A-9444-AC89E597F106}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{764F3B6D-896F-4E5A-9444-AC89E597F106}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{764F3B6D-896F-4E5A-9444-AC89E597F106}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0D239CFE-D1BB-49EB-B01F-5CA00BBFF921}
 	EndGlobalSection
 EndGlobal
