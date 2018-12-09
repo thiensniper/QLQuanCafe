@@ -16,7 +16,7 @@ namespace QUAN_LI_QUAN_CAFE
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FRM_MAIN());
+            Application.Run(new FRM_DN());
         }
     }
 }

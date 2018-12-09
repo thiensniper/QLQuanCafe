@@ -83,6 +83,12 @@
     <Compile Include="FRM_CT_LP_PHIEU.designer.cs">
       <DependentUpon>FRM_CT_LP_PHIEU.cs</DependentUpon>
     </Compile>
+    <Compile Include="FRM_DN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_DN.Designer.cs">
+      <DependentUpon>FRM_DN.cs</DependentUpon>
+    </Compile>
     <Compile Include="FRM_LP_HD.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,6 +119,12 @@
     <Compile Include="FRM_QL_DU.Designer.cs">
       <DependentUpon>FRM_QL_DU.cs</DependentUpon>
     </Compile>
+    <Compile Include="FRM_QL_TK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_QL_TK.Designer.cs">
+      <DependentUpon>FRM_QL_TK.cs</DependentUpon>
+    </Compile>
     <Compile Include="FRM_XEM_HD.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,6 +138,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FRM_CT_LP_PHIEU.resx">
       <DependentUpon>FRM_CT_LP_PHIEU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_DN.resx">
+      <DependentUpon>FRM_DN.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRM_LP_HD.resx">
       <DependentUpon>FRM_LP_HD.cs</DependentUpon>
@@ -141,6 +156,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FRM_QL_DU.resx">
       <DependentUpon>FRM_QL_DU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_QL_TK.resx">
+      <DependentUpon>FRM_QL_TK.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRM_XEM_HD.resx">
       <DependentUpon>FRM_XEM_HD.cs</DependentUpon>

@@ -66,5 +66,11 @@ namespace QUAN_LI_QUAN_CAFE
         private void FRM_MAIN_Load(object sender, EventArgs e)
         {
         }
+
+        private void BT_QL_TK_Click(object sender, EventArgs e)
+        {
+            FRM_QL_TK FRM_QL_TK = new FRM_QL_TK();
+            FRM_QL_TK.ShowDialog();
+        }
     }
 }
