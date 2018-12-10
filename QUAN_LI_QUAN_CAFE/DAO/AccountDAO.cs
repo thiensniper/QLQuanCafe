@@ -34,5 +34,18 @@ namespace QUAN_LI_QUAN_CAFE.DAO
             DataTable data = DataProvider.Instance.excuteQuery(query);
             return data.Rows.Count > 0;
         }
+
+     
+
+        public bool UpdatePassword(string username,  string newpass)
+        {
+            string query = "UPDATE TAIKHOAN SET Password="+ newpass + " WHERE username = '"+ username + "'";
+            DataTable data = DataProvider.Instance.excuteQuery(query);
+            return data.Rows.Count > 0;
+
+        }
+
+
+
     }
 }

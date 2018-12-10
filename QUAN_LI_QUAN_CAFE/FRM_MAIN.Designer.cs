@@ -60,7 +60,7 @@
             this.BT_QL_DU.Location = new System.Drawing.Point(6, 19);
             this.BT_QL_DU.Name = "BT_QL_DU";
             this.BT_QL_DU.Size = new System.Drawing.Size(355, 61);
-            this.BT_QL_DU.TabIndex = 10;
+            this.BT_QL_DU.TabIndex = 0;
             this.BT_QL_DU.Text = "LẬP DANH SÁCH ĐỒ UỐNG";
             this.BT_QL_DU.UseVisualStyleBackColor = true;
             this.BT_QL_DU.Click += new System.EventHandler(this.BT_QL_DU_Click);
@@ -71,7 +71,7 @@
             this.BT_MENU.Location = new System.Drawing.Point(6, 147);
             this.BT_MENU.Name = "BT_MENU";
             this.BT_MENU.Size = new System.Drawing.Size(355, 61);
-            this.BT_MENU.TabIndex = 10;
+            this.BT_MENU.TabIndex = 2;
             this.BT_MENU.Text = "TRA CỨU ĐỒ UỐNG, COMBO (MENU)";
             this.BT_MENU.UseVisualStyleBackColor = true;
             this.BT_MENU.Click += new System.EventHandler(this.BT_MENU_Click);
@@ -82,7 +82,7 @@
             this.BT_QL_CB.Location = new System.Drawing.Point(6, 83);
             this.BT_QL_CB.Name = "BT_QL_CB";
             this.BT_QL_CB.Size = new System.Drawing.Size(355, 61);
-            this.BT_QL_CB.TabIndex = 10;
+            this.BT_QL_CB.TabIndex = 1;
             this.BT_QL_CB.Text = "LẬP DANH SÁCH COMBO";
             this.BT_QL_CB.UseVisualStyleBackColor = true;
             this.BT_QL_CB.Click += new System.EventHandler(this.BT_QL_CB_Click);
@@ -93,7 +93,7 @@
             this.BT_LAP_HD.Location = new System.Drawing.Point(6, 19);
             this.BT_LAP_HD.Name = "BT_LAP_HD";
             this.BT_LAP_HD.Size = new System.Drawing.Size(355, 61);
-            this.BT_LAP_HD.TabIndex = 10;
+            this.BT_LAP_HD.TabIndex = 3;
             this.BT_LAP_HD.Text = "LẬP HÓA ĐƠN BÁN HÀNG";
             this.BT_LAP_HD.UseVisualStyleBackColor = true;
             this.BT_LAP_HD.Click += new System.EventHandler(this.BT_LAP_HD_Click);
@@ -105,7 +105,7 @@
             this.BT_E.Location = new System.Drawing.Point(6, 150);
             this.BT_E.Name = "BT_E";
             this.BT_E.Size = new System.Drawing.Size(355, 61);
-            this.BT_E.TabIndex = 10;
+            this.BT_E.TabIndex = 5;
             this.BT_E.Text = "THOÁT CHƯƠNG TRÌNH";
             this.BT_E.UseVisualStyleBackColor = true;
             this.BT_E.Click += new System.EventHandler(this.BT_E_Click);
@@ -142,7 +142,7 @@
             this.BT_QL_TK.Location = new System.Drawing.Point(6, 83);
             this.BT_QL_TK.Name = "BT_QL_TK";
             this.BT_QL_TK.Size = new System.Drawing.Size(355, 61);
-            this.BT_QL_TK.TabIndex = 10;
+            this.BT_QL_TK.TabIndex = 4;
             this.BT_QL_TK.Text = "ĐỔI MẬT KHẨU";
             this.BT_QL_TK.UseVisualStyleBackColor = true;
             this.BT_QL_TK.Click += new System.EventHandler(this.BT_QL_TK_Click);
