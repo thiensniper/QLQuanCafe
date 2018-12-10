@@ -50,6 +50,7 @@
   <ItemGroup>
     <Compile Include="TestLogin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnitTestDoUong\TestThemDoUong.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\QUAN_LI_QUAN_CAFE\QUAN_LI_QUAN_CAFE.csproj">
