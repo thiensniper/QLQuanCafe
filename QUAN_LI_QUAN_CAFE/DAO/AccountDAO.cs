@@ -37,10 +37,9 @@ namespace QUAN_LI_QUAN_CAFE.DAO
 
      
 
-        public bool UpdatePassword(string pas)
+        public bool UpdatePassword(string username,  string newpass)
         {
-            //string query = "SELECT * FROM TAIKHOAN WHERE Username = '" + username + "' and Password = '" + password + "'";
-            string query = "UPDATE TAIKHOAN SET Password="+pas+" WHERE username = 'admin'";
+            string query = "UPDATE TAIKHOAN SET Password="+ newpass + " WHERE username = '"+ username + "'";
             DataTable data = DataProvider.Instance.excuteQuery(query);
             return data.Rows.Count > 0;
 
