@@ -4,7 +4,7 @@ using QUAN_LI_QUAN_CAFE;
 namespace QUAN_LI_QUAN_CAFE_TEST
 {
     [TestFixture]
-    public class TestThemDoUong
+    public class TestSuaDoUong
     {
         [SetUp]
         public void SetUp()
@@ -17,7 +17,7 @@ namespace QUAN_LI_QUAN_CAFE_TEST
         }
 
         [Test]
-        public void TC_THEM_01()
+        public void TC_SUA_01()
         {
             string id = "BEER";
             string name = "TIGER";
@@ -25,25 +25,12 @@ namespace QUAN_LI_QUAN_CAFE_TEST
             string dotangkem = "0";
             double dongia = 15000;
 
-            bool res = QUAN_LI_QUAN_CAFE.DAO.DoUongDAO.Instance.insertDoUong(id, name, loaidouong, dotangkem, dongia);
+            bool res = QUAN_LI_QUAN_CAFE.DAO.DoUongDAO.Instance.updateDoUongbyID(id, name, loaidouong, dotangkem, dongia);
             Assert.AreEqual(res, true);
         }
 
         [Test]
-        public void TC_THEM_02()
-        {
-            string id = "";
-            string name = "TIGER";
-            string loaidouong = "BEER";
-            string dotangkem = "0";
-            double dongia = 15000;
-
-            bool res = QUAN_LI_QUAN_CAFE.DAO.DoUongDAO.Instance.insertDoUong(id, name, loaidouong, dotangkem, dongia);
-            Assert.AreEqual(res, false);
-        }
-
-        [Test]
-        public void TC_THEM_03()
+        public void TC_SUA_02()
         {
             string id = "BEER";
             string name = "";
@@ -51,12 +38,12 @@ namespace QUAN_LI_QUAN_CAFE_TEST
             string dotangkem = "0";
             double dongia = 15000;
 
-            bool res = QUAN_LI_QUAN_CAFE.DAO.DoUongDAO.Instance.insertDoUong(id, name, loaidouong, dotangkem, dongia);
+            bool res = QUAN_LI_QUAN_CAFE.DAO.DoUongDAO.Instance.updateDoUongbyID(id, name, loaidouong, dotangkem, dongia);
             Assert.AreEqual(res, false);
         }
 
         [Test]
-        public void TC_THEM_04()
+        public void TC_SUA_03()
         {
             string id = "BEER";
             string name = "TIGER";
@@ -64,25 +51,25 @@ namespace QUAN_LI_QUAN_CAFE_TEST
             string dotangkem = "0";
             double dongia = 15000;
 
-            bool res = QUAN_LI_QUAN_CAFE.DAO.DoUongDAO.Instance.insertDoUong(id, name, loaidouong, dotangkem, dongia);
+            bool res = QUAN_LI_QUAN_CAFE.DAO.DoUongDAO.Instance.updateDoUongbyID(id, name, loaidouong, dotangkem, dongia);
             Assert.AreEqual(res, false);
         }
 
         [Test]
-        public void TC_THEM_05()
+        public void TC_SUA_04()
         {
             string id = "BEER";
             string name = "TIGER";
             string loaidouong = "BEER";
             string dotangkem = "0";
-            double dongia = -15000;
+            double dongia = 0;
 
-            bool res = QUAN_LI_QUAN_CAFE.DAO.DoUongDAO.Instance.insertDoUong(id, name, loaidouong, dotangkem, dongia);
+            bool res = QUAN_LI_QUAN_CAFE.DAO.DoUongDAO.Instance.updateDoUongbyID(id, name, loaidouong, dotangkem, dongia);
             Assert.AreEqual(res, false);
 
-            dongia = 0;
+            dongia = -15000;
 
-            res = QUAN_LI_QUAN_CAFE.DAO.DoUongDAO.Instance.insertDoUong(id, name, loaidouong, dotangkem, dongia);
+            res = QUAN_LI_QUAN_CAFE.DAO.DoUongDAO.Instance.updateDoUongbyID(id, name, loaidouong, dotangkem, dongia);
             Assert.AreEqual(res, false);
         }
     }
