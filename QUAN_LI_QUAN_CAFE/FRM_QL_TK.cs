@@ -13,26 +13,34 @@ namespace QUAN_LI_QUAN_CAFE
 {
     public partial class FRM_QL_TK : Form
     {
-        public FRM_QL_TK()
+        private string username;
+        public FRM_QL_TK(string username)
         {
             InitializeComponent();
+            this.username = username;
         }
 
         private void BT_D_Click(object sender, EventArgs e)
         {
             if (AccountDAO.Instance.CheckAccountExistsByID(TB_TENDN.Text, TB_OLDPAS.Text))
             {
-               //MessageBox.Show("thành công bước 1: lay thong tin dang nhap", "", MessageBoxButtons.OK);
+                if (TB_OLDPAS.Text.Trim().Length <= 4)
+                {
+                    MessageBox.Show("Mật khẩu phải lớn hơn 4 ký tự", "", MessageBoxButtons.OK);
+                    return;
+                }
+
+                //MessageBox.Show("thành công bước 1: lay thong tin dang nhap", "", MessageBoxButtons.OK);
                 if (TB_PAS.Text == TB_PAS2.Text)
                 {
                     try
                     {
                         AccountDAO.Instance.UpdatePassword(TB_TENDN.Text,TB_PAS.Text);
-                        MessageBox.Show("doi mat khau thanh cong", "", MessageBoxButtons.OK);
+                        MessageBox.Show("Đổi mật khẩu thành công", "", MessageBoxButtons.OK);
                     }
                     catch
                     {
-                        MessageBox.Show("đổi mật khẩu không thành công", "", MessageBoxButtons.OK);
+                        MessageBox.Show("Đổi mật khẩu không thành công", "", MessageBoxButtons.OK);
                     }
                 }
                 else
@@ -41,6 +49,11 @@ namespace QUAN_LI_QUAN_CAFE
                 }
             }
 
+        }
+
+        private void FRM_QL_TK_Load(object sender, EventArgs e)
+        {
+            TB_TENDN.Text = this.username;
         }
     }
 }
