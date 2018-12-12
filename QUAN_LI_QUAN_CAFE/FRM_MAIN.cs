@@ -12,9 +12,11 @@ namespace QUAN_LI_QUAN_CAFE
 {
     public partial class FRM_MAIN : Form
     {
-        public FRM_MAIN()
+        private string username;
+        public FRM_MAIN(string username)
         {
             InitializeComponent();
+            this.username = username;
         }
 
         private void TIME1_Tick(object sender, EventArgs e)
@@ -69,7 +71,7 @@ namespace QUAN_LI_QUAN_CAFE
 
         private void BT_QL_TK_Click(object sender, EventArgs e)
         {
-            FRM_QL_TK FRM_QL_TK = new FRM_QL_TK();
+            FRM_QL_TK FRM_QL_TK = new FRM_QL_TK(this.username);
             FRM_QL_TK.ShowDialog();
         }
     }

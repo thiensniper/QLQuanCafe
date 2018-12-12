@@ -22,7 +22,7 @@ namespace QUAN_LI_QUAN_CAFE
         {
             if (AccountDAO.Instance.CheckAccountExistsByID(TB_TENDN.Text, TB_PAS.Text))
             {
-                FRM_MAIN FRM_MAIN = new FRM_MAIN();
+                FRM_MAIN FRM_MAIN = new FRM_MAIN(TB_TENDN.Text);
                 this.Hide();
                 FRM_MAIN.ShowDialog();
             }

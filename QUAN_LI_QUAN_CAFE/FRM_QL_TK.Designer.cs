@@ -115,6 +115,7 @@
             // 
             // TB_TENDN
             // 
+            this.TB_TENDN.Enabled = false;
             this.TB_TENDN.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TB_TENDN.Location = new System.Drawing.Point(198, 13);
             this.TB_TENDN.Multiline = true;
@@ -152,6 +153,7 @@
             this.Name = "FRM_QL_TK";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ĐỔI MẬT KHẨU";
+            this.Load += new System.EventHandler(this.FRM_QL_TK_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
