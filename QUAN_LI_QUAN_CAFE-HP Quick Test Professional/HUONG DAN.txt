@@ -1,0 +1,5 @@
+Day la Integrated Test cua project QUAN_LI_QUAN_CAFE_BALCONY
+
+- Open file Solution bang HP Quick test
+- Doi duong dan tap tin trong phan Record and Run Setting
+- Doi duong dan tap tin trong tat ca Test case (TC2 tro di)
